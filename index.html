@@ -1,0 +1,311 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODS by TailwindCSS</title>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body class="text-gray-600 font-sans">
+    <div class="grid md:grid-cols-5">
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <!--  Start -->
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/" class="hover:text-gray-700">Foods</a>
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1">
+              <a href="#" class="px-4 flex justify-center md:justify-start">
+                <svg
+                  class="w-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="text-gray-700 font-bold py-1">
+              <a href="#" class="px-4 flex justify-center md:justify-start">
+                <svg
+                  class="w-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>About</span>
+              </a>
+            </li>
+            <li li class="text-gray-700 font-bold py-1">
+              <a href="#" class="px-4 flex justify-center md:justify-start">
+                <svg
+                  class="w-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--  End -->
+      <main class="px-16 py-6 bg-gray-100 md:col-span-4">
+        <div class="flex justify-center md:justify-end">
+          <a
+            href="#"
+            class="
+              btn
+              mx-1
+              text-red-400
+              border-red-500
+              md:border-2
+              hover:bg-red-500 hover:text-white
+              transition
+              ease-out
+              duration-300
+            "
+            >Log In</a
+          >
+          <p class="text-red-400 md:hidden">|</p>
+          <a
+            href="#"
+            class="
+              btn
+              mx-1
+              text-red-400
+              border-red-500
+              md:border-2
+              hover:bg-red-500 hover:text-white
+              transition
+              ease-out
+              duration-300
+            "
+            >Sign Up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold uppercase">Menu</h2>
+          <h3 class="text-2xl font-semibold">For Customers</h3>
+        </header>
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most Popular
+          </h4>
+
+          <div class="grid lg:grid-cols-3 mt-8 gap-10">
+            <!-- Cards go here -->
+            <div class="card hover:shadow-lg">
+              <img
+                src="public/img/Sushi.jpg"
+                alt="Sushi"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Sushi</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="inline-block w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>HOT</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-lg">
+              <img
+                src="public/img/Tempura.jpg"
+                alt="Tempura"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Tempura</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="inline-block w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>HOT</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-lg">
+              <img
+                src="public/img/Sashimi.jpg"
+                alt="Sashimi"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Sashimi</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="inline-block w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>HOT</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Recently
+          </h4>
+
+          <div class="grid lg:grid-cols-3 mt-8 gap-10">
+            <!-- Cards go here -->
+            <div class="card hover:shadow-lg">
+              <img
+                src="public/img/Soba.jpg"
+                alt="Soba"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Soba Noodles</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg class='inline-block w-5' xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+</svg>
+                <span>NEW</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-lg">
+              <img
+                src="public/img/Tonkatsu.jpg"
+                alt="Tonkatsu"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Tonkatsu</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg class='inline-block w-5' xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+</svg>
+                <span>NEW</span>
+              </div>
+            </div>
+            <div? class="card hover:shadow-lg">
+              <img
+                src="public/img/Ramen.jpg"
+                alt="Ramen"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Ramen</span>
+                <span class="block text-gray-500 text-sm">Japanse</span>
+              </div>
+              <div class="badge">
+                <svg class='inline-block w-5' xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+</svg>
+                <span>NEW</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-8">
+            <div
+              class="
+                bg-red-500
+                text-white
+                btn
+                hover:shadow-inner
+                transform
+                hover:scale-125
+                transition
+                ease-out
+                duration-300
+              "
+            >
+              Load more
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="public/index.js"></script>
+  </body>
+</html>
